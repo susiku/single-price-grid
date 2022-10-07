@@ -4,10 +4,6 @@ module.exports = {
     "./*.html"
   ],
   theme: {
-    screens:{
-      "sm": "375px",
-      "lg":"1440px"
-    },
     extend: {
       colors:{
         "Cyan":"hsl(179deg, 62%, 43%)",
@@ -15,6 +11,10 @@ module.exports = {
         "Light-Gray":" hsl(204deg, 43%, 93%)",
         "Grayish-Blue":"hsl(218deg, 22%, 67%)"
       }
+    },
+    screens:{
+      "sm": "375px",
+      "lg":"1440px"
     },
   },
   plugins: [

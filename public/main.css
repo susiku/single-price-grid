@@ -591,10 +591,6 @@ video {
   overflow: hidden;
 }
 
-.overflow-visible {
-  overflow: visible;
-}
-
 .rounded-md {
   border-radius: 0.375rem;
 }
@@ -602,10 +598,6 @@ video {
 .rounded-t-md {
   border-top-left-radius: 0.375rem;
   border-top-right-radius: 0.375rem;
-}
-
-.rounded-bl-lg {
-  border-bottom-left-radius: 0.5rem;
 }
 
 .rounded-br-lg {
@@ -724,15 +716,19 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.hover\:bg-Bright-Yellow:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(71deg 73% 54% / var(--tw-bg-opacity));
+}
+
 @media (min-width: 375px) {
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
   }
 
-  .sm\:min-h-min {
-    min-height: -webkit-min-content;
-    min-height: -moz-min-content;
-    min-height: min-content;
+  .sm\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .sm\:min-h-fit {
@@ -745,16 +741,26 @@ video {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .sm\:overflow-y-visible {
-    overflow-y: visible;
+  .sm\:rounded-l-none {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
   }
 
-  .sm\:rounded-none {
-    border-radius: 0px;
+  .sm\:p-3 {
+    padding: 0.75rem;
   }
 
-  .sm\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
+  .sm\:pt-3 {
+    padding-top: 0.75rem;
+  }
+
+  .sm\:pb-3 {
+    padding-bottom: 0.75rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .lg\:rounded-bl-lg {
+    border-bottom-left-radius: 0.5rem;
   }
 }
